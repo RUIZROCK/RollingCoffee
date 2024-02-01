@@ -1,11 +1,17 @@
 import './App.css'
+import Footer from './components/common/Footer'
+import Menu from './components/common/Menu'
+import Inicio from './components/pages/Inicio'
 
 function App() {
   return (
     <>
-    <h1>Prueba Titulo</h1>
+    <Menu></Menu>
+    <Inicio></Inicio>
+    <Footer></Footer>
     </>
   )
 }
 
 export default App
+  
