@@ -1,1 +1,17 @@
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+.mainContainer{
+  flex-grow: 1;
+}
+
+.bg-verdecito{
+  background-color: #003c25;
+}
+
+.txt-verdecito{
+  color: #0b5c3d;
+}
