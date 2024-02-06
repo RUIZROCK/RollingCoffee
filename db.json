@@ -1,0 +1,14 @@
+{
+    "productos":[
+        {
+            "id":"1",
+            "nombre":"cafe",
+            "caracteristicas":"Caracteristica del producto",
+            "caracteristica_amplia":"Caracteristica del producto amplia",
+            "categoria":"bebida caliente",
+            "precio":1500,
+            "imagen":"url",
+            "disponible":false
+        }
+    ]
+}
