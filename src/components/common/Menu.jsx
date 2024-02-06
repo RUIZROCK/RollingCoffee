@@ -18,7 +18,7 @@ function Menu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <div className="d-flex justify-content-end">
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ms-auto">
               <NavLink end className="nav-link" to="/">Inicio</NavLink>
               <NavLink end className="nav-link" to="/Administracion">Administrador</NavLink>
               <NavLink end className="nav-link" to="/Registro">Registro</NavLink>
