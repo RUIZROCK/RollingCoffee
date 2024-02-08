@@ -1,11 +1,19 @@
 import { Container } from "react-bootstrap";
 import capu from "../../assets/capuchino.png";
+import { NavLink } from "react-router-dom";
+
 const Administracion = () => {
   return (
     <Container className="mainContainer">
       <div className="row justify-content-between p-3">
         <h3 className="col-12 col-md-4">Gestor Productos</h3>
-        <a className="btn btn-primary col-12 col-md-1" href="">Nuevo</a>
+        <NavLink
+          className="btn btn-primary col-12 col-md-1"
+          end
+          to="/NuevoProducto"
+        >
+          Nuevo
+        </NavLink>
       </div>
       <div className="table-responsive">
         <table className="table table-striped table-bordered">
@@ -31,7 +39,13 @@ const Administracion = () => {
               </td>
               <td>Nose</td>
               <td>
-              <button className="btn btn-warning mx-2">Ver</button>
+                <NavLink
+                  className="btn btn-warning mx-2"
+                  end
+                  to="/DetalleProducto"
+                >
+                  Ver
+                </NavLink>
                 <button className="btn btn-success mx-2">Editar</button>
                 <button className="btn btn-danger">Borrar</button>
               </td>
