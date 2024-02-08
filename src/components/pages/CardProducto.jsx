@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 import cafeAmericano from "../../assets/cafeAmericano.png";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const CardProducto = () => {
   return (
     <Card style={{ width: "18rem" }} className="m-1">
@@ -13,9 +13,9 @@ const CardProducto = () => {
         </Card.Text>
         <hr />
         <div className="d-flex justify-content-end">
-          <NavLink className="btn btn-success" end to="/DetalleProducto">
+          <Link className="btn btn-success" end to="/DetalleProducto">
             Ver mas
-          </NavLink>
+          </Link>
         </div>
       </Card.Body>
     </Card>

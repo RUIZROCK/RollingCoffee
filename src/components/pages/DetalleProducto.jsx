@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import cafe from "../../assets/cafeAmericano.png"
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const DetalleProducto = () => {
   return (
     <Container className="mainContainer  py-3 ">
@@ -31,7 +31,7 @@ const DetalleProducto = () => {
               <br />
               <b>Precio : $12000</b>
               <div className="row justify-content-end">
-                <NavLink end to="/" className="btn btn-success col-6 col-md-3 mx-2">Volver a inicio</NavLink>
+                <Link end to="/" className="btn btn-success col-6 col-md-3 mx-2">Volver a inicio</Link>
               </div>
             </article>
           </div>

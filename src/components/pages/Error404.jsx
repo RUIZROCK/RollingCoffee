@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import error404 from "../../assets/error404.png";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Error404 = () => {
   return (
     <Container className="mainContainer py-3">
@@ -12,13 +12,13 @@ const Error404 = () => {
         />
       </div>
       <div className="d-flex justify-content-center">
-        <NavLink
+        <Link
           className="col-12 col-sm-12 col-md-3 col-lg-2 btn btn-primary"
           end
           to="/"
         >
           Volver a inicio
-        </NavLink>
+        </Link>
       </div>
     </Container>
   );
