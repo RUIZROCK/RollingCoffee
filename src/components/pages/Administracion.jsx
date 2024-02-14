@@ -12,7 +12,7 @@ const Administracion = () => {
           end
           to="/NuevoProducto"
         >
-          Nuevo
+          <i className="bi bi-file-earmark-plus"></i>
         </NavLink>
       </div>
       <div className="table-responsive">
@@ -46,8 +46,8 @@ const Administracion = () => {
                 >
                   Ver
                 </NavLink>
-                <button className="btn btn-success mx-2">Editar</button>
-                <button className="btn btn-danger">Borrar</button>
+                <button className="btn btn-success mx-2"><i className="bi bi-pencil-square"></i></button>
+                <button className="btn btn-danger"><i className="bi bi-trash"></i></button>
               </td>
             </tr>
           </tbody>
