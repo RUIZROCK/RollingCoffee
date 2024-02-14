@@ -10,5 +10,11 @@
             "imagen":"url",
             "disponible":false
         }
+    ],
+    "usuarios":[
+        {
+            "email":"mail@mail.com",
+            "password":"password"
+        }
     ]
 }
