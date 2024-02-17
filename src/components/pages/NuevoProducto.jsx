@@ -1,8 +1,6 @@
 import { Button, Container, Form, InputGroup, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-//import "../../helpers/queries";
-import "../../helpers/queries";
-
+import { nuevoProductoAPI } from "../../helpers/queries"
 const NuevoProducto = () => {
   const {
     register,
@@ -10,8 +8,9 @@ const NuevoProducto = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (producto) => {
-    console.log(producto);
+  const onSubmit = async (producto) => {
+    const respuesta = await nuevoProductoAPI(producto);
+    //si codigo 201 alert + mensaje de que se cargo bien sino mensaje de error
   };
 
   return (
@@ -41,7 +40,7 @@ const NuevoProducto = () => {
             <Form.Control
               type="text"
               placeholder="Precio"
-              {...register("nombre", {
+              {...register("precio", {
                 required: "Campo obligatorio",
                 min: { value: 100, message: "Minimo 2 cifras" },
                 max: { value: 10000, message: "Maximo 8 cifras" },
@@ -58,7 +57,7 @@ const NuevoProducto = () => {
               <Form.Control
                 type="text"
                 placeholder="imagen.com/imagen.jpg"
-                {...register("nombre", {
+                {...register("imagen", {
                   required: "Campo obligatorio",
                   pattern: {
                     value:
@@ -99,7 +98,7 @@ const NuevoProducto = () => {
               type="text"
               placeholder="Escribe aqui una breve descripcion"
               as="textarea"
-              {...register("descripcion_breve", {
+              {...register("caracteristicas", {
                 required: "La descripcion breve es obligatoria",
                 minLength: {
                   value: 10,
@@ -122,7 +121,7 @@ const NuevoProducto = () => {
               type="text"
               placeholder="Escribe aqui una descripcion mas amplia"
               as="textarea"
-              {...register("descripcion_amplia", {
+              {...register("caracteristica_amplia", {
                 required: "La descripcion amplia es obligatoria",
                 minLength: {
                   value: 20,
