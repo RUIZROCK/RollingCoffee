@@ -1,7 +1,5 @@
 const URI_Producto = import.meta.env.VITE_API_PRODUCTO;
 
-console.log(URI_Producto);
-
 export const nuevoProductoAPI = async (producto)=>{
     try{
         const respuesta= await fetch(URI_Producto, {

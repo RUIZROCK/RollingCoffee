@@ -10,7 +10,7 @@ const NuevoProducto = () => {
 
   const onSubmit = async (producto) => {
     const respuesta = await nuevoProductoAPI(producto);
-    //si codigo 201 alert + mensaje de que se cargo bien sino mensaje de error
+    respuesta.status===201? alert("Carga exitosa"):alert("Error");
   };
 
   return (
