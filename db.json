@@ -1,20 +1,57 @@
 {
-    "productos":[
-        {
-            "id":"1",
-            "nombre":"cafe",
-            "caracteristicas":"Caracteristica del producto",
-            "caracteristica_amplia":"Caracteristica del producto amplia",
-            "categoria":"bebida caliente",
-            "precio":1500,
-            "imagen":"url",
-            "disponible":false
-        }
-    ],
-    "usuarios":[
-        {
-            "email":"mail@mail.com",
-            "password":"password"
-        }
-    ]
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "cafe",
+      "caracteristicas": "Caracteristica del producto",
+      "caracteristica_amplia": "Caracteristica del producto amplia",
+      "categoria": "bebida caliente",
+      "precio": 1500,
+      "imagen": "url",
+      "disponible": false
+    },
+    {
+      "id": "ba3a",
+      "nombre": "cafe",
+      "precio": "1213",
+      "imagen": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/temas/cafe.jpg",
+      "categoria": "Infusion",
+      "caracteristicas": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "caracteristica_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "7eb6",
+      "nombre": "cafe",
+      "precio": "1213",
+      "imagen": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/temas/cafe.jpg",
+      "categoria": "Infusion",
+      "caracteristicas": "sssssssssssssssssssssssssssssssssssssssssssss",
+      "caracteristica_amplia": "sssssssssssssssssssssssssssssssssssssssssssssss"
+    },
+    {
+      "id": "9683",
+      "nombre": "cafe",
+      "precio": "1213",
+      "imagen": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/temas/cafe.jpg",
+      "categoria": "Infusion",
+      "caracteristicas": "sssssssssssssssssssssssssssssssssssssssssssss",
+      "caracteristica_amplia": "sssssssssssssssssssssssssssssssssssssssssssssss"
+    },
+    {
+      "id": "3ec2",
+      "nombre": "cafe",
+      "precio": "1213",
+      "imagen": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/temas/cafe.jpg",
+      "categoria": "Infusion",
+      "caracteristicas": "sssssssssssssssssssssssssssssssssssssssssssss",
+      "caracteristica_amplia": "sssssssssssssssssssssssssssssssssssssssssssssss"
+    }
+  ],
+  "usuarios": [
+    {
+      "email": "mail@mail.com",
+      "password": "password",
+      "id": "e3ee"
+    }
+  ]
 }
